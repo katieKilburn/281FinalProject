@@ -11,4 +11,8 @@ public class Word {
         Word newWord = new Word("school");
         return newWord;
     }
+
+    public char generateNewChar(){
+        return 'x';
+    }
 }
