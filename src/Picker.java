@@ -28,10 +28,9 @@ public class Picker extends Player{
 
         }
 
-
    }
 
-   public void setNumBodyParts(int i){
+   public void pickNumBodyParts(int i){
 
    }
 }

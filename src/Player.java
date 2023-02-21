@@ -1,7 +1,7 @@
 public class Player {
     static int maxNumOfGuesses;
     static Word word;
-    static char guessedLetter;
+    static char currentGuessedLetter;
     boolean isHuman;
 
     public Player(boolean isHuman){

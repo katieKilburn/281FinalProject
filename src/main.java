@@ -10,23 +10,24 @@ public class main {
 }
 
 class Game{
-    static Hangman hangman;
-    static Player human;
-    static Player computer;
-    static Guesser guesser;
-    static Picker picker;
+    public Hangman hangman;
+    public Player human;
+    public Player computer;
+    public Guesser guesser;
+    public Picker picker;
 
     public Game(){
         hangman = new Hangman(5);
         human = new Guesser(true);
         computer = new Picker(false);
         startGame();
+
     }
     public void startGame(){
         setGuesser(human);
         setPicker(computer);
-
-        System.out.println(guesser.guessALetter('a'));
+        guesser.guessALetter();
+        System.out.println("You guessed: " + Player.currentGuessedLetter);
 
     }
 
